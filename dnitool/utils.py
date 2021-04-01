@@ -3,7 +3,10 @@ import socket
 
 
 class WHOISClient:
-    '''Documentation'''
+    '''
+    Client that enables communication with the WHOIS port
+    using a socket.
+    '''
     def __init__(self):
         pass
 
@@ -37,7 +40,22 @@ class CustomException(Exception):
 
 
 def cleanup_domain_name(domain):
-    '''Clean up the domain name format'''
+    '''
+    Clean up the domain name format as provided by the user.
+
+    Removes excess text, eg "www", to retrieve only the main domain
+    URL.
+
+    Parameters
+    ----------
+    domain : str
+        The domain name.
+
+    Returns
+    -------
+    str
+        A string with format website.com, website.edu, etc.
+    '''
 
     domain.replace('http://', '')
     domain.replace('https://', '')
@@ -61,6 +79,7 @@ def _unpack_iana(response):
 
 
 def _unpack_verisign(response):
+    '''Get the metadata values from a verisign WHOIS response.'''
     info = {}
     for line in response.split('\n'):
         if line and line[0]==' ':
@@ -70,6 +89,22 @@ def _unpack_verisign(response):
 
 
 def unpack(response, host=HOST_IANA):
+    '''
+    Parse the metadata values from the WHOIS response.
+
+    Parameters
+    ----------
+    response : str
+        The response from the WHOIS query.
+    host : str
+        The hostname used in the WHOIS query.
+
+    Returns
+    -------
+    dict
+        The key,value pairs returned in the WHOIS query
+        as a Python dict.
+    '''
     if host == HOST_IANA:
         return _unpack_iana(response)
     elif host == HOST_VERISIGN:

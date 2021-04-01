@@ -1,8 +1,9 @@
 from dnitool import expiry, whois
+import os
 
 # Example 1: Print the domain expiraiton date to a file
 # for 1,000 example domains.
-with open('test/test_data.txt', 'r') as f:
+with open(os.path.join('/data/test_data.txt'), 'r') as f:
     lines = f.readlines()
 
 with open('data/test_output.txt', 'w') as f:
