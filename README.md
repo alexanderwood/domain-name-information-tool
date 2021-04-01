@@ -83,9 +83,9 @@ Distributed under the MIT License. See `LICENSE` for more information.
 <!-- CONTACT -->
 ## Contact
 
-Alexander Wood - [@woodalexandern](https://twitter.com/woodalexandern) - [website](https://alexanderwood.github.io)
+Alexander Wood - [website](https://alexanderwood.github.io)
 
-Project Link: [https://github.com/alexanderwood/hydrate-tweets-api-v2](https://github.com/alexanderwood/domain-name-information-tool)
+Project Link: [https://github.com/alexanderwood/domain-name-information-tool](https://github.com/alexanderwood/domain-name-information-tool)
 
 
 
@@ -93,17 +93,3 @@ Project Link: [https://github.com/alexanderwood/hydrate-tweets-api-v2](https://g
 ## Acknowledgements
 
 * [Best-README-Template](https://github.com/othneildrew/Best-README-Template)
-
-
-
-<!-- MARKDOWN LINKS & IMAGES -->
-<!-- https://www.markdownguide.org/basic-syntax/#reference-style-links -->
-[contributors-shield]: https://img.shields.io/github/contributors/alexanderwood/hydrate-tweets-api-v2.svg?style=flat-square
-[contributors-url]: https://github.com/alexanderwood/hydrate-tweets-api-v2/graphs/contributors
-[license-shield]: https://img.shields.io/github/license/alexanderwood/hydrate-tweets-api-v2.svg?style=flat-square
-[license-url]: https://github.com/alexanderwood/hydrate-tweets-api-v2/blob/master/LICENSE.txt
-[linkedin-shield]: https://img.shields.io/badge/-LinkedIn-black.svg?style=flat-square&logo=linkedin&colorB=555
-[linkedin-url]: https://linkedin.com/in/woodalexandern
-[product-screenshot]: images/screenshot.png
-
-# Domain Name Tool
